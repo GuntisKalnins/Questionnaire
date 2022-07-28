@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --transition: all 300ms ease-in-out;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Oswald', sans-serif;
+}
+.wrapper{
+    background: lightgray;
+    padding: 1.5rem 4rem 3rem 4rem;
+    width: 800px;
+    height: 680px;
+    border-radius: 1.5rem;
+    position: relative;
+}
+.quiz-title{
+    text-align: center;
+    font-size: 2rem;
+}
+.score{
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;  
+}
+.questions{
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.3;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 1rem 0;
+}
+.options li{
+    border-radius: 0.5rem;
+    font-weight: 600;
+    margin: 0.7rem 0.2rem;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    background-color: white;
+    transition: var(--transition);
+}
+/*  js  */
+.selected{
+    background-color: lightseagreen!important;
+}
+.footer button{
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;    
+    margin: 0 auto 0 auto;
+    cursor: pointer;
+    display: block;
+    background-color: white;
+    letter-spacing: 2px;
+}
+.footer button:hover{
+    background-color: #e6e6e6;
+}
+.footer button:active{
+    transform: scale(0.95);
+}
+#again{
+    
+    display: none;
+}
+#result, #gameover{
+    padding: 0.7rem 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+#gameover{
+    margin-top: 300px;
+    margin-bottom: 1rem;
+}
